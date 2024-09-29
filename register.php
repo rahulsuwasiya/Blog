@@ -41,16 +41,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
 <body>
 <form method="POST" action="">
+<div class="flex">
+<div class="container">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required><br>
 
-    <label for="email">Email:</label>
+    <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;</label>
     <input type="email" id="email" name="email" required><br>
 
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required><br>
 
     <button type="submit">Sign Up</button>
+    <div style="padding-top:20px;" >Already have an account?<a href="login.php" style="text-decoration: none;"> Login now</a><div>
+</div>
+</div>
 </form>
 </body>
 </html>

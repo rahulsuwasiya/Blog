@@ -9,7 +9,7 @@ body {
 
 /* DashBoard Table */
 table {
-    width: 100%;
+    width: 40%;
     border-collapse: collapse;
 }
 
@@ -67,6 +67,7 @@ hr {
 
 .blog-posts {
     margin-top: 20px;
+    width:60%;
 }
 
 form {
@@ -172,3 +173,20 @@ a:hover {
         padding: 8px;
     }
 }
+
+.create_div{
+    width:40%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.create_div label{
+    padding: 10px;
+   font-weight: 700;
+}
+
+.content{
+    height:60px ;
+}
+

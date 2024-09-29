@@ -60,11 +60,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <h1>Create a New Post</h1>
     <form method="POST" action="">
+        <div class="create_div">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required><br>
-
+        <div class="create">
         <label for="content">Content:</label>
-        <textarea id="content" name="content" rows="10" required></textarea><br>
+        <textarea id="content" name="content" rows="5" required></textarea><br></div>
 
         <label for="tags">Tags (optional):</label>
         <input type="text" id="tags" name="tags"><br>
@@ -76,6 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </select><br>
 
         <button type="submit">Create Post</button>
+    </div>
     </form>
     <a href="dashboard.php">Go back to Dashboard</a>
     <script>

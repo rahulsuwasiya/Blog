@@ -68,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <h1>Edit Post</h1>
     <form method="POST" action="">
+    <div class="create_div">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" value="<?php echo htmlspecialchars($post['title']); ?>" required><br>
 
@@ -83,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <option value="published" <?php if ($post['status'] === 'published') echo 'selected'; ?>>Published</option>
         </select><br>
 
-        <button type="submit">Update Post</button>
+        <button type="submit">Update Post</button></div>
     </form>
     <a href="dashboard.php">Go back to Dashboard</a>
     <script>
