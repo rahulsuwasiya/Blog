@@ -23,12 +23,13 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style.css"> <!-- Your CSS styles -->
 </head>
 <body>
-    <h1>Published Blog Posts</h1>
+    <h1>Published Blog Posts <a href="login.php">Login</a> <!-- Link to the user's dashboard --></h1>
     
     <!-- Search Form -->
     <form method="GET" action="">
         <input type="text" name="search" value="<?php echo htmlspecialchars($searchTerm); ?>" placeholder="Search by title, content, or tags..." required>
         <button type="submit">Search</button>
+        
     </form>
     
     <div class="blog-posts">
@@ -54,6 +55,6 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <p>No published blog posts available matching your search.</p>
         <?php endif; ?>
     </div>
-    <a href="dashboard.php">Go back to Dashboard</a> <!-- Link to the user's dashboard -->
+    
 </body>
 </html>

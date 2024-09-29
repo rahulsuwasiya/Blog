@@ -57,5 +57,8 @@ $posts = $stmt->fetchAll();
     <?php else: ?>
         <p>You haven't created any posts yet.</p>
     <?php endif; ?>
+    <div>
+    <a href="public_blog.php" style="text-decoration: none; margin-top:100px;">Back to blogs</a> 
+    </div>
 </body>
 </html>

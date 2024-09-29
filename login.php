@@ -32,6 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
 <body>
 <form method="POST" action="">
+    <div class="flex">
+    <div class="container">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required><br>
 
@@ -39,6 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="password" id="password" name="password" required><br>
 
     <button type="submit">Login</button>
+</div>
+</div>
 </form>
 </body>
 </html>
